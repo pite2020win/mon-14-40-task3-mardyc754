@@ -34,18 +34,18 @@ class ClassDiary:
   def __init__(self, students):
     self.students = students
   
-    def student_average(self, student):
-      return sum(self.students[student])/len(self.students[student])
+  def student_average(self, student, student_index):
+    return sum(self.students[student_index][student])/len(self.students[student_index][student])
     
-    def class_average(self):
-      sum_of_grades = 0
-      for student in self.students:
-        sum_of_grades += sum(student[student_full_name])
-      return sum_of_grades/5
+  def class_average(self, student_full_name):
+    sum_of_grades = 0
+    for student in self.students:
+      sum_of_grades += sum(student[student_full_name])
+    return sum_of_grades/5
 
 
 list_of_students = [{"Jan Kowalski": [3,4,4,5,30]}, {"Piotr Nowak": [3,2,5,3,4]}]
 
 class_diary = ClassDiary(list_of_students) 
 
-print(class_diary.student_average("Jan Kowalski"))
+print(class_diary.student_average("Jan Kowalski", 0))
