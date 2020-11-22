@@ -9,12 +9,13 @@
                         "name": "Adam",
                         "surname": "Abacki",
                         "class_name": "1A",
-                        "school": "xyz",
+                        "school_name": "xyz",
                         "grades": {
                             "maths": 4,
-                            "geography": 3,
-                            "biology": 5,
-                            "physics": 5
+                            "polish": 3,
+                            "geography": 4,
+                            "physics": 5,
+                            "english": 6
                         },
                         "attendance": {
                             "day 1": true,
@@ -22,19 +23,19 @@
                             "day 3": true,
                             "day 4": true,
                             "day 5": false
-                        },
-                        "student_id": "xyz1A01"
+                        }
                     },
                     {
                         "name": "Bogdan",
                         "surname": "Babacki",
                         "class_name": "1A",
-                        "school": "xyz",
+                        "school_name": "xyz",
                         "grades": {
-                            "maths": 2,
-                            "geography": 6,
-                            "biology": 4,
-                            "physics": 4
+                            "maths": 3,
+                            "polish": 5,
+                            "geography": 4,
+                            "physics": 3,
+                            "english": 5
                         },
                         "attendance": {
                             "day 1": true,
@@ -42,19 +43,19 @@
                             "day 3": true,
                             "day 4": false,
                             "day 5": true
-                        },
-                        "student_id": "xyz1A02"
+                        }
                     },
                     {
                         "name": "Celina",
                         "surname": "Cabacka",
                         "class_name": "1A",
-                        "school": "xyz",
+                        "school_name": "xyz",
                         "grades": {
-                            "maths": 3,
-                            "geography": 6,
-                            "biology": 4,
-                            "physics": 3
+                            "maths": 4,
+                            "polish": 4,
+                            "geography": 4,
+                            "physics": 3,
+                            "english": 5
                         },
                         "attendance": {
                             "day 1": true,
@@ -62,19 +63,19 @@
                             "day 3": false,
                             "day 4": true,
                             "day 5": true
-                        },
-                        "student_id": "xyz1A03"
+                        }
                     },
                     {
                         "name": "Danuta",
                         "surname": "Dadacka",
                         "class_name": "1A",
-                        "school": "xyz",
+                        "school_name": "xyz",
                         "grades": {
                             "maths": 5,
-                            "geography": 6,
-                            "biology": 5,
-                            "physics": 5
+                            "polish": 4,
+                            "geography": 5,
+                            "physics": 5,
+                            "english": 6
                         },
                         "attendance": {
                             "day 1": true,
@@ -82,19 +83,19 @@
                             "day 3": true,
                             "day 4": true,
                             "day 5": true
-                        },
-                        "student_id": "xyz1A04"
+                        }
                     },
                     {
                         "name": "Jan",
                         "surname": "Kowalski",
                         "class_name": "1A",
-                        "school": "xyz",
+                        "school_name": "xyz",
                         "grades": {
-                            "maths": 4,
+                            "maths": 6,
+                            "polish": 3,
                             "geography": 5,
-                            "biology": 3,
-                            "physics": 2
+                            "physics": 6,
+                            "english": 4
                         },
                         "attendance": {
                             "day 1": true,
@@ -102,8 +103,7 @@
                             "day 3": true,
                             "day 4": false,
                             "day 5": true
-                        },
-                        "student_id": "xyz1A05"
+                        }
                     }
                 ]
             },
@@ -114,61 +114,61 @@
                         "name": "Edmund",
                         "surname": "Ebacki",
                         "class_name": "2B",
-                        "school": "xyz",
-                        "grades": {
-                            "maths": 4,
-                            "geography": 3,
-                            "biology": 5,
-                            "physics": 5
-                        },
-                        "attendance": {
-                            "day 1": true,
-                            "day 2": true,
-                            "day 3": true,
-                            "day 4": true,
-                            "day 5": false
-                        },
-                        "student_id": "xyz2B01"
-                    },
-                    {
-                        "name": "Feliks",
-                        "surname": "Kot",
-                        "class_name": "2B",
-                        "school": "xyz",
+                        "school_name": "xyz",
                         "grades": {
                             "maths": 2,
-                            "geography": 6,
-                            "biology": 4,
-                            "physics": 4
-                        },
-                        "attendance": {
-                            "day 1": true,
-                            "day 2": false,
-                            "day 3": true,
-                            "day 4": false,
-                            "day 5": true
-                        },
-                        "student_id": "xyz2B02"
-                    },
-                    {
-                        "name": "Maurycy",
-                        "surname": "Mabacki",
-                        "class_name": "2B",
-                        "school": "xyz",
-                        "grades": {
-                            "maths": 3,
-                            "geography": 6,
-                            "biology": 4,
-                            "physics": 3
+                            "polish": 3,
+                            "geography": 3,
+                            "physics": 3,
+                            "english": 3
                         },
                         "attendance": {
                             "day 1": true,
                             "day 2": true,
                             "day 3": false,
+                            "day 4": false,
+                            "day 5": false
+                        }
+                    },
+                    {
+                        "name": "Feliks",
+                        "surname": "Kot",
+                        "class_name": "2B",
+                        "school_name": "xyz",
+                        "grades": {
+                            "maths": 4,
+                            "polish": 3,
+                            "geography": 5,
+                            "physics": 5,
+                            "english": 4
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": false,
+                            "day 5": true
+                        }
+                    },
+                    {
+                        "name": "Maurycy",
+                        "surname": "Mabacki",
+                        "class_name": "2B",
+                        "school_name": "xyz",
+                        "grades": {
+                            "maths": 6,
+                            "polish": 5,
+                            "geography": 4,
+                            "physics": 5,
+                            "english": 5
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
                             "day 4": true,
                             "day 5": true
-                        },
-                        "student_id": "xyz2B03"
+                        }
                     }
                 ]
             }
@@ -184,72 +184,53 @@
                         "name": "John",
                         "surname": "Doe",
                         "class_name": "1A",
-                        "school": "abc",
+                        "school_name": "abc",
                         "grades": {
-                            "maths": 4,
-                            "geography": 3,
-                            "biology": 5,
-                            "physics": 5
+                            "maths": 5,
+                            "polish": 2,
+                            "geography": 6,
+                            "physics": 4,
+                            "english": 6
                         },
                         "attendance": {
-                            "day 1": true,
+                            "day 1": false,
                             "day 2": true,
                             "day 3": true,
                             "day 4": true,
                             "day 5": false
-                        },
-                        "student_id": "abc1A01"
+                        }
                     },
                     {
                         "name": "Ksawery",
                         "surname": "Iksinsky",
                         "class_name": "1A",
-                        "school": "abc",
+                        "school_name": "abc",
                         "grades": {
-                            "maths": 2,
-                            "geography": 6,
-                            "biology": 4,
-                            "physics": 4
+                            "maths": 5,
+                            "polish": 3,
+                            "geography": 3,
+                            "physics": 3,
+                            "english": 3
                         },
                         "attendance": {
                             "day 1": true,
                             "day 2": false,
-                            "day 3": true,
-                            "day 4": false,
+                            "day 3": false,
+                            "day 4": true,
                             "day 5": true
-                        },
-                        "student_id": "abc1A02"
+                        }
                     },
                     {
                         "name": "Sabina",
                         "surname": "Sabacka",
                         "class_name": "1A",
-                        "school": "abc",
-                        "grades": {
-                            "maths": 3,
-                            "geography": 6,
-                            "biology": 4,
-                            "physics": 3
-                        },
-                        "attendance": {
-                            "day 1": true,
-                            "day 2": true,
-                            "day 3": false,
-                            "day 4": true,
-                            "day 5": true
-                        },
-                        "student_id": "abc1A03"
-                    },
-                    {
-                        "name": "Tadeusz",
-                        "surname": "Tadacki",
-                        "class_name": "1A",
-                        "school": "abc",
+                        "school_name": "abc",
                         "grades": {
                             "maths": 5,
-                            "geography": 6,
-                            "biology": 5,
-                            "physics": 5
+                            "polish": 4,
+                            "geography": 4,
+                            "physics": 4,
+                            "english": 5
                         },
                         "attendance": {
                             "day 1": true,
@@ -257,8 +238,27 @@
                             "day 3": true,
                             "day 4": true,
                             "day 5": true
+                        }
+                    },
+                    {
+                        "name": "Tadeusz",
+                        "surname": "Tadacki",
+                        "class_name": "1A",
+                        "school_name": "abc",
+                        "grades": {
+                            "maths": 3,
+                            "polish": 5,
+                            "geography": 4,
+                            "physics": 3,
+                            "english": 5
                         },
-                        "student_id": "abc1A04"
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": true,
+                            "day 5": true
+                        }
                     }
                 ]
             }
