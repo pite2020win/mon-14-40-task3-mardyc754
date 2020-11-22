@@ -20,10 +20,10 @@ def class_diary_decoder(class_diary_dict):
 
 
 def school_decoder(school_dict):
-    new_class_diary_list = []
+    new_class_diary_dict = {}
     for class_diary in school_dict['class_diaries']:
-        new_class_diary_list.append(class_diary_decoder(class_diary))
-    return school_data.School(school_dict['school_name'], new_class_diary_list)
+        new_class_diary_dict[class_diary['class_name']] = class_diary_decoder(class_diary)
+    return school_data.School(school_dict['school_name'], new_class_diary_dict)
 
 
 def schools_decoder(schools):
@@ -41,13 +41,15 @@ def display_student_grades(student):
 
 
 def student_info(student):
+    student_attendance = round(student.attendance_percentage() *
+                               len(student.attendance)/100)
     return f"Name: {student.name.title()}\n" \
            f"Surname {student.surname.title()}\n" \
            f"Class: {student.class_name.title()}\n" \
            f"School: {student.school.title()}\n" \
            f"Grades: {display_student_grades(student)}\n" \
-           f"Attendance: {student.attendance_percentage()}%" \
-           f"{student.get_total_attendance()}/{len(student.attendance)})"
+           f"Attendance: {student.attendance_percentage()}% " \
+           f"({student_attendance}/{len(student.attendance)})"
 
 
 def get_students_info(class_diary):
@@ -57,10 +59,17 @@ def get_students_info(class_diary):
     return return_text
 
 
+def display_students_averages(class_diary):
+    return_info = class_diary.class_name
+    for i, student in enumerate(class_diary.students):
+        return_info += f"{i+1}. {student.surname}, {student.name}: " \
+                       f"{student.average_grade()}"
+
+
 def get_info_of_all_students_in_the_school(school):
-    return_text = school.school_name.title()
-    for class_diary in school.class_diaries:
-        return_text += f" {class_diary.class_name}\n" \
+    return_text = f"{school.school_name.title()}\n"
+    for class_diary in school.class_diaries.values():
+        return_text += f"{class_diary.class_name}\n" \
                        f"{get_students_info(class_diary)}"
     return return_text
 
@@ -70,10 +79,10 @@ if __name__ == '__main__':
         schools = schools_decoder(json.load(read_file))
 
     print(schools)
-    print(schools['xyz'].class_diaries[0].students[-1])
-    class_1a = schools['xyz'].class_diaries[0]
+    print(schools['xyz'].class_diaries['1A'].students[-1])
+    class_1a = schools['xyz'].class_diaries['1A']
     someone_average = class_1a.get_student_average("Jan", "Kowalski")
-    class_1a.display_averages_of_all_students()
+    logging.info(display_students_averages(class_1a))
     logging.info(get_students_info(class_1a))
     someone = class_1a.get_to_the_student("Adam", "Abacki")
     logging.info(student_info(someone))

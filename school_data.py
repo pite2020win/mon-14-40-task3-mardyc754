@@ -1,10 +1,6 @@
 import statistics
 from dataclasses import dataclass
-from typing import List
-
-
-def extract_grades(grades_dict):
-    return list(grades_dict.values())
+from typing import List, Dict
 
 
 @dataclass
@@ -16,15 +12,12 @@ class Student:
     grades: dict
     attendance: dict
 
+
     def average_grade(self):
         return statistics.fmean(list(self.grades.values()))
 
-    def get_total_attendance(self):
-        total_attendance = sum(list(self.attendance.values()))
-        return total_attendance
-
     def attendance_percentage(self):
-        total_attendance = self.get_total_attendance()
+        total_attendance = sum(list(self.attendance.values()))
         return total_attendance * 100 / len(self.attendance)
 
 
@@ -43,14 +36,8 @@ class ClassDiary:
     def class_average(self):
         list_of_grades = []
         for student in self.students:
-            list_of_grades.extend(extract_grades(student.grades))
+            list_of_grades.extend(list(student.grades.values()))
         return statistics.fmean(list_of_grades)
-
-    def display_averages_of_all_students(self):
-        return_info = self.class_name
-        for i, student in enumerate(self.students):
-            return_info += f"{i+1}. {student.surname}, {student.name}: " \
-                           f"{student.average_grade()}"
 
     def subject_grades(self, subject_name):
         grades_dict = {}
@@ -64,9 +51,7 @@ class ClassDiary:
         return statistics.fmean(subject_grades.values())
 
     def class_attendance_percentage(self):
-        attendace_percentages = []
-        for student in self.students:
-            attendace_percentages.append(student.attendance_percentage())
+        attendace_percentages = list(map(Student.attendance_percentage, self.students))
         return statistics.fmean(attendace_percentages)
 
     def get_to_the_student(self, name, surname):
@@ -83,37 +68,36 @@ class ClassDiary:
 @dataclass
 class School:
     school_name: str
-    class_diaries: List[ClassDiary]
+    class_diaries: Dict[str, ClassDiary]
 
     def school_average(self):
         extracted_school_grades = []
-        for class_diary in self.class_diaries:
+        for class_diary in self.class_diaries.values():
             for student in class_diary.students:
-                extracted_school_grades.extend(extract_grades(student.grades))
+                extracted_school_grades.extend(list(student.grades.values()))
         return statistics.fmean(extracted_school_grades)
 
     def school_subject_average(self, subject_name):
         subject_grades = []
-        for class_diary in self.class_diaries:
+        for class_diary in self.class_diaries.values():
             class_subject_grades = class_diary.subject_grades(subject_name)
-            class_subject_grades = extract_grades(class_subject_grades)
+            class_subject_grades = list(class_subject_grades.values())
             subject_grades.extend(class_subject_grades)
         return statistics.fmean(subject_grades)
 
     def get_all_grades(self):
         all_grades = {}
-        for class_diary in self.class_diaries:
+        for class_diary in self.class_diaries.values():
             all_grades.update(class_diary.class_grades())
         return all_grades
 
     def school_attendance_percentage(self):
-        attendance_percentages = []
-        for class_diary in self.class_diaries:
-            attendance_percentages.append(class_diary.class_attendance_percentage())
+        attendance_percentages = list(map(ClassDiary.class_attendance_percentage,
+                                          self.class_diaries.values()))
         return statistics.fmean(attendance_percentages)
 
     def get_to_the_student(self, name, surname):
-        for class_diary in self.class_diaries:
+        for class_diary in self.class_diaries.values():
             found_student = class_diary.get_to_the_student(name, surname)
             if found_student:
                 return found_student
