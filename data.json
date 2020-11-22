@@ -1,0 +1,267 @@
+[
+    {
+        "school_name": "xyz",
+        "class_diaries": [
+            {
+                "class_name": "1A",
+                "students": [
+                    {
+                        "name": "Adam",
+                        "surname": "Abacki",
+                        "class_name": "1A",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 4,
+                            "geography": 3,
+                            "biology": 5,
+                            "physics": 5
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": true,
+                            "day 5": false
+                        },
+                        "student_id": "xyz1A01"
+                    },
+                    {
+                        "name": "Bogdan",
+                        "surname": "Babacki",
+                        "class_name": "1A",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 2,
+                            "geography": 6,
+                            "biology": 4,
+                            "physics": 4
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": false,
+                            "day 3": true,
+                            "day 4": false,
+                            "day 5": true
+                        },
+                        "student_id": "xyz1A02"
+                    },
+                    {
+                        "name": "Celina",
+                        "surname": "Cabacka",
+                        "class_name": "1A",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 3,
+                            "geography": 6,
+                            "biology": 4,
+                            "physics": 3
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": false,
+                            "day 4": true,
+                            "day 5": true
+                        },
+                        "student_id": "xyz1A03"
+                    },
+                    {
+                        "name": "Danuta",
+                        "surname": "Dadacka",
+                        "class_name": "1A",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 5,
+                            "geography": 6,
+                            "biology": 5,
+                            "physics": 5
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": true,
+                            "day 5": true
+                        },
+                        "student_id": "xyz1A04"
+                    },
+                    {
+                        "name": "Jan",
+                        "surname": "Kowalski",
+                        "class_name": "1A",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 4,
+                            "geography": 5,
+                            "biology": 3,
+                            "physics": 2
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": false,
+                            "day 5": true
+                        },
+                        "student_id": "xyz1A05"
+                    }
+                ]
+            },
+            {
+                "class_name": "2B",
+                "students": [
+                    {
+                        "name": "Edmund",
+                        "surname": "Ebacki",
+                        "class_name": "2B",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 4,
+                            "geography": 3,
+                            "biology": 5,
+                            "physics": 5
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": true,
+                            "day 5": false
+                        },
+                        "student_id": "xyz2B01"
+                    },
+                    {
+                        "name": "Feliks",
+                        "surname": "Kot",
+                        "class_name": "2B",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 2,
+                            "geography": 6,
+                            "biology": 4,
+                            "physics": 4
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": false,
+                            "day 3": true,
+                            "day 4": false,
+                            "day 5": true
+                        },
+                        "student_id": "xyz2B02"
+                    },
+                    {
+                        "name": "Maurycy",
+                        "surname": "Mabacki",
+                        "class_name": "2B",
+                        "school": "xyz",
+                        "grades": {
+                            "maths": 3,
+                            "geography": 6,
+                            "biology": 4,
+                            "physics": 3
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": false,
+                            "day 4": true,
+                            "day 5": true
+                        },
+                        "student_id": "xyz2B03"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "school_name": "abc",
+        "class_diaries": [
+            {
+                "class_name": "1A",
+                "students": [
+                    {
+                        "name": "John",
+                        "surname": "Doe",
+                        "class_name": "1A",
+                        "school": "abc",
+                        "grades": {
+                            "maths": 4,
+                            "geography": 3,
+                            "biology": 5,
+                            "physics": 5
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": true,
+                            "day 5": false
+                        },
+                        "student_id": "abc1A01"
+                    },
+                    {
+                        "name": "Ksawery",
+                        "surname": "Iksinsky",
+                        "class_name": "1A",
+                        "school": "abc",
+                        "grades": {
+                            "maths": 2,
+                            "geography": 6,
+                            "biology": 4,
+                            "physics": 4
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": false,
+                            "day 3": true,
+                            "day 4": false,
+                            "day 5": true
+                        },
+                        "student_id": "abc1A02"
+                    },
+                    {
+                        "name": "Sabina",
+                        "surname": "Sabacka",
+                        "class_name": "1A",
+                        "school": "abc",
+                        "grades": {
+                            "maths": 3,
+                            "geography": 6,
+                            "biology": 4,
+                            "physics": 3
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": false,
+                            "day 4": true,
+                            "day 5": true
+                        },
+                        "student_id": "abc1A03"
+                    },
+                    {
+                        "name": "Tadeusz",
+                        "surname": "Tadacki",
+                        "class_name": "1A",
+                        "school": "abc",
+                        "grades": {
+                            "maths": 5,
+                            "geography": 6,
+                            "biology": 5,
+                            "physics": 5
+                        },
+                        "attendance": {
+                            "day 1": true,
+                            "day 2": true,
+                            "day 3": true,
+                            "day 4": true,
+                            "day 5": true
+                        },
+                        "student_id": "abc1A04"
+                    }
+                ]
+            }
+        ]
+    }
+]
