@@ -156,8 +156,8 @@ if __name__ == '__main__':
 
     for class_diary in schools['xyz'].class_diaries.values():
         logging.info(f"Class {class_diary.class_name}, Xyz attendance: "
-                     f"{class_diary.class_attendance_percentage():.2f}")
+                     f"{class_diary.class_attendance_percentage():.2f} %")
 
     for school in schools.values():
         logging.info(f"School {school.school_name.title()} attendance: "
-                     f"{school.school_attendance_percentage():.2f}")
+                     f"{school.school_attendance_percentage():.2f} %")
